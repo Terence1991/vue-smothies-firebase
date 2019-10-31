@@ -20,6 +20,14 @@ export default {
         {title: 'Magic-Mushroom', slug: 'magic-mushroom', ingrediants: ['mush'], id: '2'},
       ]
     }
+  },
+  methods: {
+    deleteSmoothies(id) => {
+      this.smoothies = this.smoothies.filter((smoothie) => {
+        return smoothie.id != id;
+      })
+    }
+    
   }
 
 }
