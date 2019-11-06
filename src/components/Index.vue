@@ -7,9 +7,6 @@
   </div>
 </template>
 
-
-
-
 <script>
 export default {
   name:  'index', 
@@ -24,7 +21,7 @@ export default {
   methods: {
     deleteSmoothies(id) => {
       this.smoothies = this.smoothies.filter((smoothie) => {
-        return smoothie.id != id;
+        return smoothie.id != id;  
       })
     }
     
